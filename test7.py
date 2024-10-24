@@ -125,7 +125,7 @@ X_scaled = scaler.fit_transform(ais_train[features])
 y = ais_train[target].values
 
 # Define sequence length (number of timesteps)
-sequence_length = 60  # For example, use the last 10 timesteps to predict the next position
+sequence_length = 25  # For example, use the last 10 timesteps to predict the next position
 
 # Create sequences from the scaled features and target
 X_seq, y_seq = create_sequences(X_scaled, y, sequence_length)
